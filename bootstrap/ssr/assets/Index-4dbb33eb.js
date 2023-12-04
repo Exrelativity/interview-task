@@ -239,7 +239,7 @@ function CustomAdminTable({
               }
             ),
             /* @__PURE__ */ jsxs(Fragment, { children: [
-              datas.userId === auth.user.id && /* @__PURE__ */ jsx(Fragment, { children: singleItemEditPrefixURLName && /* @__PURE__ */ jsx(
+              /* @__PURE__ */ jsx(Fragment, { children: singleItemEditPrefixURLName && /* @__PURE__ */ jsx(
                 Link,
                 {
                   title: "click to edit item",
@@ -250,7 +250,7 @@ function CustomAdminTable({
                   children: /* @__PURE__ */ jsx(AiTwotoneEdit, {})
                 }
               ) }),
-              datas.userId === auth.user.id && /* @__PURE__ */ jsx(Fragment, { children: singleItemDeletePrefixURLName && /* @__PURE__ */ jsx(
+              /* @__PURE__ */ jsx(Fragment, { children: singleItemDeletePrefixURLName && /* @__PURE__ */ jsx(
                 Link,
                 {
                   title: "click to delete item",

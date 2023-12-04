@@ -280,8 +280,7 @@ export default function CustomAdminTable({
                                                         >
                                                             <BiShow />
                                                         </Link>)}<>
-                                                            {datas.userId ===
-                                                                auth.user.id && (
+                                                           
                                                                     <>
                                                                         {singleItemEditPrefixURLName && (<Link
                                                                             title="click to edit item"
@@ -296,9 +295,8 @@ export default function CustomAdminTable({
                                                                             <AiTwotoneEdit />
                                                                         </Link>)}
                                                                     </>
-                                                                )}
-                                                            {datas.userId ===
-                                                                auth.user.id && (
+                                                             
+                                                            
                                                                     <>
                                                                         {singleItemDeletePrefixURLName && (
                                                                             <Link
@@ -315,7 +313,7 @@ export default function CustomAdminTable({
                                                                             </Link>)
                                                                         }
                                                                     </>
-                                                                )}
+                                                              
                                                         </>
                                                     </div></div>
                                             </td>
