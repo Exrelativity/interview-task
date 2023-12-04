@@ -1,11 +1,11 @@
 import { jsxs, jsx } from "react/jsx-runtime";
 import { useEffect } from "react";
-import { G as Guest } from "./GuestLayout-579d1a7a.js";
+import { G as Guest } from "./GuestLayout-18882aa7.js";
 import { T as TextInput, I as InputError } from "./TextInput-feeed98c.js";
 import { I as InputLabel } from "./InputLabel-2849fc87.js";
 import { P as PrimaryButton } from "./PrimaryButton-cf1a4cd8.js";
 import { useForm, Head } from "@inertiajs/react";
-import "./ApplicationLogo-5a041bc9.js";
+import "./ApplicationLogo-fc9e7c15.js";
 function ResetPassword({ token, email }) {
   const { data, setData, post, processing, errors, reset } = useForm({
     token,

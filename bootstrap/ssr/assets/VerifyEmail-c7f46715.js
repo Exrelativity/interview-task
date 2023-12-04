@@ -1,8 +1,8 @@
 import { jsxs, jsx } from "react/jsx-runtime";
-import { G as Guest } from "./GuestLayout-579d1a7a.js";
+import { G as Guest } from "./GuestLayout-18882aa7.js";
 import { P as PrimaryButton } from "./PrimaryButton-cf1a4cd8.js";
 import { useForm, Head, Link } from "@inertiajs/react";
-import "./ApplicationLogo-5a041bc9.js";
+import "./ApplicationLogo-fc9e7c15.js";
 function VerifyEmail({ status }) {
   const { post, processing } = useForm({});
   const submit = (e) => {

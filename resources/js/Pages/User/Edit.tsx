@@ -9,7 +9,7 @@ import InputLabel from "@/Components/InputLabel";
 import InputError from "@/Components/InputError";
 import SelectOption from "@/Components/SelectOption";
 
-export default function Edit({ auth, page_data, message, ...props }) {
+export default function Edit({ auth, page_data, message, ...props }:any) {
     const [isLoading, setLoading] = useState(true);
     const [pagedata, setPagedata] = useState(page_data);
 
@@ -32,7 +32,7 @@ export default function Edit({ auth, page_data, message, ...props }) {
         { value: "regular", name: "regular" },
     ];
 
-    const handleOnChange = (event) => {
+    const handleOnChange = (event:any) => {
         setData(
             event.target.name,
             event.target.type === "checkbox"
@@ -41,7 +41,7 @@ export default function Edit({ auth, page_data, message, ...props }) {
         );
     };
 
-    const handlesubmit = (e) => {
+    const handlesubmit = (e:any) => {
         e.preventDefault();
         submit({
             preserveScroll: true,
@@ -55,7 +55,10 @@ export default function Edit({ auth, page_data, message, ...props }) {
             <Head
                 title={"Edit " + pagedata.name}
             />
-            <AuthenticatedLayout auth={auth}>
+           <AuthenticatedLayout
+            user={auth.user}
+            header={<h2 className="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">Dashboard</h2>}
+        >
                 <div className="container">
                     {message && <div className="mb-4 font-medium text-sm text-center w-full items-center justify-center m-auto text-green-600">{message}</div>}
                     <div className="w-full flex flex-col justify-center items-center">

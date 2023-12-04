@@ -1,8 +1,8 @@
 import { jsxs, jsx } from "react/jsx-runtime";
-import { A as Authenticated } from "./AuthenticatedLayout-dcf97762.js";
+import { A as Authenticated } from "./AuthenticatedLayout-945826f7.js";
 import { Head } from "@inertiajs/react";
 import "react";
-import "./ApplicationLogo-5a041bc9.js";
+import "./ApplicationLogo-fc9e7c15.js";
 import "@headlessui/react";
 function Dashboard({ auth }) {
   return /* @__PURE__ */ jsxs(

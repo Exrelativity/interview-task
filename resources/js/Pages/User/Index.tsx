@@ -6,7 +6,7 @@ import AuthenticatedLayout from "@/Layouts/AuthenticatedLayout";
 import Pagination from "@/Components/Pagination";
 import CustomAdminTable from "@/Components/CustomAdminTable";
 
-export default function Index({ auth, message, ...props }) {
+export default function Index({ auth, message, ...props }:any) {
     const [isLoading, setLoading] = useState(true);
     const tableData = {
         auth: auth,

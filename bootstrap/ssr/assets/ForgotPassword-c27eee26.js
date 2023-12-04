@@ -1,9 +1,9 @@
 import { jsxs, jsx } from "react/jsx-runtime";
-import { G as Guest } from "./GuestLayout-579d1a7a.js";
+import { G as Guest } from "./GuestLayout-18882aa7.js";
 import { T as TextInput, I as InputError } from "./TextInput-feeed98c.js";
 import { P as PrimaryButton } from "./PrimaryButton-cf1a4cd8.js";
 import { useForm, Head } from "@inertiajs/react";
-import "./ApplicationLogo-5a041bc9.js";
+import "./ApplicationLogo-fc9e7c15.js";
 import "react";
 function ForgotPassword({ status }) {
   const { data, setData, post, processing, errors } = useForm({

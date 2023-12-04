@@ -6,7 +6,7 @@ import { Link, Head } from "@inertiajs/react";
 import AuthenticatedLayout from "@/Layouts/AuthenticatedLayout";
 import PrimaryButton from "@/Components/PrimaryButton";
 
-export default function Read({ auth, page_data }) {
+export default function Read({ auth, page_data }:any) {
     const [isLoading, setLoading] = useState(true);
 
     const [data, setData] = useState(page_data ? page_data : auth.user);
@@ -17,8 +17,9 @@ export default function Read({ auth, page_data }) {
         <>
             <Head title={data.name} />
             <AuthenticatedLayout
-                auth={auth}
-            >
+            user={auth.user}
+            header={<h2 className="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">Dashboard</h2>}
+        >
                 <div className="container">
                     <div className="w-full flex flex-col justify-center items-center">
                         <div className="w-full pb-2">

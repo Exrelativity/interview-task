@@ -1,5 +1,5 @@
 import { jsxs, jsx } from "react/jsx-runtime";
-import { A as ApplicationLogo } from "./ApplicationLogo-5a041bc9.js";
+import { A as ApplicationLogo } from "./ApplicationLogo-fc9e7c15.js";
 import { Link } from "@inertiajs/react";
 function Guest({ children }) {
   return /* @__PURE__ */ jsxs("div", { className: "min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-gray-100 dark:bg-gray-900", children: [
