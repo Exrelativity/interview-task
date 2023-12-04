@@ -304,7 +304,8 @@ function Index({ auth, message, ...props }) {
     /* @__PURE__ */ jsx(
       Authenticated,
       {
-        auth,
+        user: auth.user,
+        header: /* @__PURE__ */ jsx("h2", { className: "font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight", children: "Dashboard" }),
         children: /* @__PURE__ */ jsxs("div", { className: "container", children: [
           /* @__PURE__ */ jsx(CustomAdminTable, { ...tableData }),
           props.page_data.data && /* @__PURE__ */ jsx(Pagination, { ...props })

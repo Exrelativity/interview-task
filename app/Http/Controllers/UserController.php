@@ -33,7 +33,8 @@ class UserController extends Controller
     public function index(Request $request)
     {
         try {
-            $query = User::all();
+            $query = User::orderByDesc('updated_at')
+                ->paginate(50);
             if ($request->wantsJson()) {
                 return ['page_data' => $query];
             } else {

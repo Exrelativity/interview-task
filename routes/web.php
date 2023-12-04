@@ -35,7 +35,7 @@ Route::middleware('auth')->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
-
+Route::get('/user/show/{id}', [UserController::class, 'show'])->middleware('auth')->name('user.show')->whereUuid("id");
 Route::get('/users', [UserController::class, 'index'])->middleware(['auth'])->name('user.index');
 Route::middleware('auth')->group(function () {
     Route::get('/user/create', [UserController::class, 'create'])->name('user.create');
